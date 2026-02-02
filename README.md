@@ -1,3 +1,170 @@
+فيما يلي **الترجمة إلى العربية** مع الحفاظ الكامل على المعنى والدقة التقنية دون الإخلال بالمصطلحات أو الروابط:
+
+---
+
+# Quran JSON
+
+[![أحدث إصدار](https://badgen.net/npm/v/quran-json)](https://www.npmjs.com/package/quran-json)
+
+نص القرآن الكريم، والنقل الصوتي (Transliteration)، والترجمات بصيغة JSON.
+
+## CDN
+
+يمكنك الاطلاع على مجلد [`/dist`](https://github.com/risan/quran-json/tree/master/dist) لمشاهدة جميع ملفات JSON المتاحة. كما تتوفر ملفات JSON عبر شبكة CDN الخاصة بـ [JSDELIVR](https://www.jsdelivr.com/package/npm/quran-json?path=dist).
+
+### الحصول على نص القرآن كاملًا مع الترجمات
+
+يستخدم هذا المشروع نص القرآن العثماني من **[موسوعة القرآن الكريم](https://quranenc.com/en/home)**.
+أما النقل الصوتي باللغة الإنجليزية فهو مأخوذ من **[Tanzil.net](https://tanzil.net/trans/en.transliteration)**.
+الترجمات متوفرة بعدة لغات كما يلي:
+
+* نص القرآن فقط:
+  [`cdn.jsdelivr.net/npm/quran-json@3.1.2/dist/quran.json`](https://cdn.jsdelivr.net/npm/quran-json@3.1.2/dist/quran.json)
+* النقل الصوتي الإنجليزي للقرآن:
+  [`cdn.jsdelivr.net/npm/quran-json@3.1.2/dist/quran_transliteration.json`](https://cdn.jsdelivr.net/npm/quran-json@3.1.2/dist/quran.json)
+* `bn` البنغالية:
+  [`cdn.jsdelivr.net/npm/quran-json@3.1.2/dist/quran_bn.json`](https://cdn.jsdelivr.net/npm/quran-json@3.1.2/dist/quran_bn.json)
+* `zh` الصينية:
+  [`cdn.jsdelivr.net/npm/quran-json@3.1.2/dist/quran_zh.json`](https://cdn.jsdelivr.net/npm/quran-json@3.1.2/dist/quran_zh.json)
+* `en` الإنجليزية:
+  [`cdn.jsdelivr.net/npm/quran-json@3.1.2/dist/quran_en.json`](https://cdn.jsdelivr.net/npm/quran-json@3.1.2/dist/quran_en.json)
+* `es` الإسبانية:
+  [`cdn.jsdelivr.net/npm/quran-json@3.1.2/dist/quran_es.json`](https://cdn.jsdelivr.net/npm/quran-json@3.1.2/dist/quran_es.json)
+* `fr` الفرنسية:
+  [`cdn.jsdelivr.net/npm/quran-json@3.1.2/dist/quran_fr.json`](https://cdn.jsdelivr.net/npm/quran-json@3.1.2/dist/quran_fr.json)
+* `id` الإندونيسية:
+  [`cdn.jsdelivr.net/npm/quran-json@3.1.2/dist/quran_id.json`](https://cdn.jsdelivr.net/npm/quran-json@3.1.2/dist/quran_id.json)
+* `ru` الروسية:
+  [`cdn.jsdelivr.net/npm/quran-json@3.1.2/dist/quran_ru.json`](https://cdn.jsdelivr.net/npm/quran-json@3.1.2/dist/quran_ru.json)
+* `sv` السويدية:
+  [`cdn.jsdelivr.net/npm/quran-json@3.1.2/dist/quran_sv.json`](https://cdn.jsdelivr.net/npm/quran-json@3.1.2/dist/quran_sv.json)
+* `tr` التركية:
+  [`cdn.jsdelivr.net/npm/quran-json@3.1.2/dist/quran_tr.json`](https://cdn.jsdelivr.net/npm/quran-json@3.1.2/dist/quran_tr.json)
+* `ur` الأردية:
+  [`cdn.jsdelivr.net/npm/quran-json@3.1.2/dist/quran_ur.json`](https://cdn.jsdelivr.net/npm/quran-json@3.1.2/dist/quran_ur.json)
+
+### الحصول على قائمة السور
+
+* العربية فقط:
+  [`cdn.jsdelivr.net/npm/quran-json@3.1.2/dist/chapters/index.json`](https://cdn.jsdelivr.net/npm/quran-json@3.1.2/dist/chapters/index.json)
+* البنغالية:
+  [`cdn.jsdelivr.net/npm/quran-json@3.1.2/dist/chapters/bn/index.json`](https://cdn.jsdelivr.net/npm/quran-json@3.1.2/dist/chapters/bn/index.json)
+* الصينية:
+  [`cdn.jsdelivr.net/npm/quran-json@3.1.2/dist/chapters/zh/index.json`](https://cdn.jsdelivr.net/npm/quran-json@3.1.2/dist/chapters/zh/index.json)
+* الإنجليزية:
+  [`cdn.jsdelivr.net/npm/quran-json@3.1.2/dist/chapters/en/index.json`](https://cdn.jsdelivr.net/npm/quran-json@3.1.2/dist/chapters/en/index.json)
+* الإسبانية:
+  [`cdn.jsdelivr.net/npm/quran-json@3.1.2/dist/chapters/es/index.json`](https://cdn.jsdelivr.net/npm/quran-json@3.1.2/dist/chapters/es/index.json)
+* الفرنسية:
+  [`cdn.jsdelivr.net/npm/quran-json@3.1.2/dist/chapters/fr/index.json`](https://cdn.jsdelivr.net/npm/quran-json@3.1.2/dist/chapters/fr/index.json)
+* الإندونيسية:
+  [`cdn.jsdelivr.net/npm/quran-json@3.1.2/dist/chapters/id/index.json`](https://cdn.jsdelivr.net/npm/quran-json@3.1.2/dist/chapters/id/index.json)
+* الروسية:
+  [`cdn.jsdelivr.net/npm/quran-json@3.1.2/dist/chapters/ru/index.json`](https://cdn.jsdelivr.net/npm/quran-json@3.1.2/dist/chapters/ru/index.json)
+* السويدية:
+  [`cdn.jsdelivr.net/npm/quran-json@3.1.2/dist/chapters/sv/index.json`](https://cdn.jsdelivr.net/npm/quran-json@3.1.2/dist/chapters/sv/index.json)
+* التركية:
+  [`cdn.jsdelivr.net/npm/quran-json@3.1.2/dist/chapters/tr/index.json`](https://cdn.jsdelivr.net/npm/quran-json@3.1.2/dist/chapters/tr/index.json)
+* الأردية:
+  [`cdn.jsdelivr.net/npm/quran-json@3.1.2/dist/chapters/ur/index.json`](https://cdn.jsdelivr.net/npm/quran-json@3.1.2/dist/chapters/ur/index.json)
+
+### الحصول على سورة واحدة
+
+يمكنك جلب سورة واحدة بتحديد رقم السورة `chapterNumber` (من 1 إلى 114).
+يتم توفير نص القرآن والنقل الصوتي لكل سورة. وللحصول على الترجمة، يمكنك تحديد رمز اللغة `langCode`:
+
+```text
+# نص القرآن مع النقل الصوتي:
+https://cdn.jsdelivr.net/npm/quran-json@3.1.2/dist/chapters/{chapterNumber}.json
+
+# نص القرآن مع النقل الصوتي والترجمة:
+https://cdn.jsdelivr.net/npm/quran-json@3.1.2/dist/chapters/{langCode}/{chapterNumber}.json
+```
+
+أمثلة:
+
+* سورة *الفاتحة* (نص فقط):
+  [`cdn.jsdelivr.net/npm/quran-json@3.1.2/dist/chapters/1.json`](https://cdn.jsdelivr.net/npm/quran-json@3.1.2/dist/chapters/1.json)
+* سورة *الرحمن* مع الترجمة الإنجليزية:
+  [`cdn.jsdelivr.net/npm/quran-json@3.1.2/dist/chapters/en/55.json`](https://cdn.jsdelivr.net/npm/quran-json@3.1.2/dist/chapters/en/55.json)
+* سورة *الإخلاص* مع الترجمة الإندونيسية:
+  [`cdn.jsdelivr.net/npm/quran-json@3.1.2/dist/chapters/id/112.json`](https://cdn.jsdelivr.net/npm/quran-json@3.1.2/dist/chapters/id/112.json)
+
+### الحصول على آية واحدة
+
+يمكنك جلب آية واحدة بتحديد رقم الآية `verseNumber` (من 1 إلى 6236):
+
+```text
+https://cdn.jsdelivr.net/npm/quran-json@3.1.2/dist/verses/{verseNumber}.json
+```
+
+على عكس باقي ملفات JSON، يحتوي ملف الآية الواحدة على **جميع الترجمات المتوفرة**.
+
+أمثلة:
+
+* الآية الأولى من سورة *الفاتحة*:
+  [`cdn.jsdelivr.net/npm/quran-json@3.1.2/dist/verses/1.json`](https://cdn.jsdelivr.net/npm/quran-json@3.1.2/dist/verses/1.json)
+* الآية السادسة من سورة *الناس*:
+  [`cdn.jsdelivr.net/npm/quran-json@3.1.2/dist/verses/6236.json`](https://cdn.jsdelivr.net/npm/quran-json@3.1.2/dist/verses/6236.json)
+
+## توليد ملفات JSON
+
+إذا رغبت في توليد ملفات JSON بنفسك:
+
+### 1. استنساخ المستودع
+
+قم باستنساخ المستودع إلى جهازك المحلي:
+
+```bash
+$ git clone git@github.com:risan/quran-json.git
+```
+
+### 2. تثبيت الاعتمادات
+
+انتقل إلى مجلد المشروع ثم ثبّت الاعتمادات:
+
+```bash
+# الانتقال إلى مجلد المشروع
+$ cd quran-json
+
+# تثبيت الاعتمادات
+$ npm install
+```
+
+### 3. توليد ملفات JSON
+
+نفّذ الأمر التالي لتوليد ملفات JSON:
+
+```bash
+$ npm run build
+```
+
+## مصادر البيانات
+
+* نص القرآن العثماني: **[موسوعة القرآن الكريم](https://quranenc.com/en/home)**
+* النقل الصوتي الإنجليزي: **[tanzil.net](https://tanzil.net/trans/en.transliteration)**
+* الترجمة البنغالية: تأليف محيي الدين خان — المصدر: tanzil.net
+* الترجمة الإنجليزية: تأليف أم محمد (صحيح إنترناشونال) — المصدر: tanzil.net
+* الترجمة الإسبانية: تأليف محمد عيسى غارسيا — المصدر: tanzil.net
+* الترجمة الفرنسية: تأليف محمد حميد الله — المصدر: tanzil.net
+* الترجمة الإندونيسية: وزارة الشؤون الإسلامية الإندونيسية — المصدر: موسوعة القرآن الكريم
+* الترجمة الروسية: تأليف إلمير كولييف — المصدر: tanzil.net
+* الترجمة السويدية: تأليف كنوت بيرنستروم — المصدر: tanzil.net
+* الترجمة التركية: رئاسة الشؤون الدينية التركية — المصدر: tanzil.net
+* الترجمة الأردية: تأليف أبو الأعلى المودودي — المصدر: tanzil.net
+* الترجمة الصينية: تأليف محمد ماكين — المصدر: موسوعة القرآن الكريم
+
+## الرخصة
+
+[CC-BY-SA 4.0](https://github.com/risan/quran-json/blob/master/LICENSE.txt) ·
+[Risan Bagja Pradana](https://risanb.com)
+
+---
+
+إذا رغبت، أقدر أجهّز لك **نسخة Markdown عربية جاهزة للنشر** أو **تعريب أسماء المفاتيح داخل JSON** نفسه 🔍📦
+
+---
+
 # Quran JSON
 
 [![Latest Version](https://badgen.net/npm/v/quran-json)](https://www.npmjs.com/package/quran-json)
