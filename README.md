@@ -1,7 +1,3 @@
-فيما يلي **الترجمة إلى العربية** مع الحفاظ الكامل على المعنى والدقة التقنية دون الإخلال بالمصطلحات أو الروابط:
-
----
-
 # Quran JSON
 
 [![أحدث إصدار](https://badgen.net/npm/v/quran-json)](https://www.npmjs.com/package/quran-json)
